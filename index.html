@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JotForm Embed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Uso Darsena TP</h1>
+        <div class="jotform-table-embed" 
+             style="width: 100%; height: 600px;" 
+             data-id="210543041941041" 
+             data-iframesource="www.jotform.com" 
+             data-type="interactive">
+        </div>
+    </div>
+    <script>
+        (function(doc, id){
+            var scripts = doc.getElementsByTagName("script")[0]; 
+            if (!doc.getElementById(id)){
+                var script = doc.createElement("script"); 
+                script.async = 1; 
+                script.id = id; 
+                script.src = "https://cdn.jotfor.ms/s/umd/latest/for-sheets-embed.js"; 
+                scripts.parentNode.insertBefore(script, scripts);
+            }
+        })(document, "jotform-async");
+    </script>
+</body>
+</html>
